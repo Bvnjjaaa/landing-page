@@ -19,3 +19,8 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
+
+.qr{
+    width: 200px;
+    height: auto;
+}
