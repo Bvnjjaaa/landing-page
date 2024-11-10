@@ -1,26 +1,151 @@
-body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+/* Reset básico */
+* {
     margin: 0;
-    text-align: center;
-}
-.qr-section, .download-button {
-    display: none;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    background-color: #007BFF;
-    color: #FFF;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.qr{
+/* Fuentes globales */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Contenedor principal */
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título principal */
+h1 {
+    font-size: 3rem;
+    color: #d32f2f; /* Rojo Chile */
+    margin-bottom: 20px;
+}
+
+/* Subtítulos */
+h2 {
+    font-size: 2rem;
+    color: #1976d2; /* Azul Chile */
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+/* Lista de beneficios */
+ul {
+    list-style-type: none;
+    margin-top: 10px;
+    text-align: left;
+    padding: 0;
+}
+
+ul li {
+    font-size: 1.1rem;
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Párrafos */
+p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Sección de código QR */
+.qr-section {
+    margin-top: 20px;
+}
+
+.qr {
     width: 200px;
-    height: auto;
+    height: 200px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Botón de descarga */
+.download-button button {
+    background-color: #1976d2; /* Azul Chile */
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-button button:hover {
+    background-color: #1565c0;
+}
+
+/* Sección de Protección de Datos */
+h3 {
+    font-size: 1.5rem;
+    color: #1976d2;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+a {
+    color: #1976d2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para los enlaces */
+footer {
+    font-size: 0.9rem;
+    margin-top: 40px;
+    text-align: center;
+    color: #aaa;
+}
+
+/* Fondo general */
+body {
+    background-color: #f0f4f8; /* Gris suave */
+}
+
+/* Espaciado entre secciones */
+section {
+    margin-bottom: 40px;
+}
+
+/* Responsividad: ajustar la página para móviles */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .qr {
+        width: 150px;
+        height: 150px;
+    }
+
+    .download-button button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+.qr-section, .download-button {
+    display: none;
 }
